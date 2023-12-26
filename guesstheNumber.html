@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Guess The Number <br>
+        The Number is range between 0 to 100
+    </div>
+    <br>
+    <div>
+        Enter the Number : 
+        <input id="result" type="number" min="0" max="100"/>
+        <button id="btn" onclick="checkresult()">Check Number</button>
+    </div>
+    <br>
+    <div>
+        <div>Previous Guess : <span id="previous"></span></div>
+        <div>Guess Remaining : <span id="remaining">10</span></div>
+    </div>
+    <br>
+    <button id="btn" onclick="restartGame()">Start New Game</button>
+    <div>
+        <div id="finalresult"></div>
+    </div>
+    <script src="./guesstheNumber.js"></script>
+</body>
+</html>

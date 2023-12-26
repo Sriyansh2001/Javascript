@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121;">
+    <!-- <div class="first">
+        this is content
+    </div> -->
+    <ul class="language">
+        <li>
+            javascript
+        </li>
+        <li>
+            CPP
+        </li>
+    </ul>
+</body>
+<script>
+    // let div = document.createElement('div');
+    // console.log(div);
+    // div.className = 'second';
+    // div.id = 'sec'; 
+    // div.innerText = 'This is second content';
+    // document.body.appendChild(div);
+    function addlang(langName) {
+        let li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addlang("Python")
+    addlang("TypeScript")
+    function addoptilang(langName) {
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${langName}`))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilang("Java")
+    addoptilang("GoLang")
+    
+    let secondLang = document.querySelector('li:nth-child(2)');
+    // secondLang.innerHTML = "Mojo";
+    let newli = document.createElement('li');
+    newli.appendChild(document.createTextNode('Mojo'));
+    secondLang.replaceWith(newli);
+
+    let lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</html>
