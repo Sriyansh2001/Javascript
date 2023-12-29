@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 0);
+}
+
+.space {
+    height: 20vh;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 94, 255);
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img {
+    width: 250px;
+    height: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.btnyes {
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: cyan;
+    scale: 1.2;
+}
+
+.btnno {
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: cyan;
+    scale: 1.2;
+}
+
+.yes {
+    margin-right: 100px;
+}
+
+.no {
+    margin-left: 100px;
+}
+
+.btnyes:hover  {
+    scale: 1.5;
+}
+
+.btnno:hover {
+    scale: 1;
+}
