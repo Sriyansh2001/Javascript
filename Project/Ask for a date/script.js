@@ -6,32 +6,28 @@ const image = document.querySelector(".img");
 function changebuttonposition() {
     let xaxis = parseInt((Math.random()*1000) % (window.innerHeight-500));
     let yaxis = parseInt((Math.random()*1000) % (window.innerWidth-500));
-    console.log(xaxis,yaxis)
     nobtn.style.top = `${xaxis}px`;
     nobtn.style.left = `${yaxis}px`;
     nobtn.style.position = 'fixed'
 }
 
-nobtn.addEventListener('click',function() {
+nobtn.addEventListener('click', function() {
     changebuttonposition()
     body.appendChild(nobtn);
 })
 
-console.log(image);
-console.log(image.src);
-
-nobtn.addEventListener('mouseover',function(){
+nobtn.addEventListener('mouseover', function(){
     image.src = 'noooo.gif';
 })
 
-nobtn.addEventListener('mouseleave',function(){
+nobtn.addEventListener('mouseleave', function(){
     image.src = 'please-yes.gif';
 })
 
-yesbtn.addEventListener('mouseover',function() {
+yesbtn.addEventListener('mouseover', function() {
     image.src = 'yes.gif';
 })
 
-yesbtn.addEventListener('mouseleave',function(){
+yesbtn.addEventListener('mouseleave', function(){
     image.src = 'please-yes.gif';
 })
